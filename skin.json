@@ -1,0 +1,84 @@
+{
+	"name": "Aikoyorians",
+	"version": "1.0.0",
+	"author": [
+		"[https://skins.wmflabs.org skins.wmflabs.org v.2.0]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Aikoyorians",
+	"descriptionmsg": "aikoyorians-skin-desc",
+	"namemsg": "skinname-aikoyorians",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"ValidSkinNames": {
+		"aikoyorians": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "aikoyorians",
+					"responsive": true,
+					"toc": false,
+					"messages": [
+						"aikoyorians-no-categories",
+						"sitetitle",
+						"search",
+						"otherlanguages",
+						"tagline"
+					],
+					"styles": [
+						"mediawiki.ui.icon",
+						"mediawiki.ui.button",
+						"skins.aikoyorians.styles"
+					],
+					"scripts": [
+						"skins.aikoyorians"
+					]
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Aikoyorians": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.aikoyorians.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"normalize": true,
+				"elements": true,
+				"content-tables": true,
+				"content-links": true,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": true,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"dist/tailwind.css"
+			]
+		},
+		"skins.aikoyorians": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Aikoyorians"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
+}

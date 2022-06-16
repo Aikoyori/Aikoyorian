@@ -1,0 +1,11 @@
+<div id="p-logo" class="mw-portlet" role="banner">
+    <a href="{{link-mainpage}}"  class="flex items-center">
+    {{#data-logos}}
+        {{#icon}}<img class="icon rounded-full absolute -translate-x-4" src="{{.}}" width="60" height="60">{{/icon}}
+        <div class="ml-12 items-center">
+            {{#wordmark}}<img src="{{src}}" class="w-full h-auto">{{/wordmark}}
+            {{^wordmark}}<h1>{{msg-sitetitle}}</h1>{{/wordmark}}
+        </div>
+    {{/data-logos}}
+    </a>
+</div>
